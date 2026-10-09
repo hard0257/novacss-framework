@@ -192,4 +192,102 @@ hr {
   margin: 2rem 0;
 }
 
+/* Colour utilities */
+.u-text-brand {
+  color: var(--brand);
+}
+
+.u-text-dark {
+  color: var(--ink);
+}
+
+.u-text-white {
+  color: #ffffff;
+}
+
+.u-bg-brand {
+  background-color: var(--brand);
+}
+
+.u-bg-soft {
+  background-color: var(--surface);
+}
+
+/* Font weight utilities */
+.u-weight-normal {
+  font-weight: 400;
+}
+
+.u-weight-bold {
+  font-weight: 700;
+}
+
+/* Font size utilities */
+.u-text-sm {
+  font-size: 0.875rem;
+}
+
+.u-text-md {
+  font-size: 1rem;
+}
+
+.u-text-lg {
+  font-size: 1.25rem;
+}
+
+/* Margin utilities */
+.u-m-0 {
+  margin: 0;
+}
+
+.u-m-1 {
+  margin: 0.25rem;
+}
+
+.u-m-2 {
+  margin: 0.5rem;
+}
+
+.u-m-3 {
+  margin: 1rem;
+}
+
+.u-m-4 {
+  margin: 1.5rem;
+}
+
+/* Padding utilities */
+.u-p-0 {
+  padding: 0;
+}
+
+.u-p-1 {
+  padding: 0.25rem;
+}
+
+.u-p-2 {
+  padding: 0.5rem;
+}
+
+.u-p-3 {
+  padding: 1rem;
+}
+
+.u-p-4 {
+  padding: 1.5rem;
+}
+
+/* Border utilities */
+.u-border {
+  border: 1px solid var(--line);
+}
+
+.u-border-brand {
+  border: 1px solid var(--brand);
+}
+
+.u-rounded {
+  border-radius: var(--radius);
+}
+
 /*# sourceMappingURL=framework.css.map */
