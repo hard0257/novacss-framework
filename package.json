@@ -1,0 +1,12 @@
+{
+  "name": "novacss-framework",
+  "version": "1.0.0",
+  "description": "A customizable CSS framework built with Sass",
+  "scripts": {
+    "build": "sass scss/framework.scss css/framework.css",
+    "watch": "sass --watch scss/framework.scss:css/framework.css"
+  },
+  "devDependencies": {
+    "sass": "^1.93.0"
+  }
+}
