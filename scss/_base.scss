@@ -1,0 +1,178 @@
+@use "tokens" as t;
+
+:root {
+  --brand: #{t.$brand};
+  --ink: #1e293b;
+  --surface: #eff6ff;
+  --line: #64748b;
+  --radius: #{t.$radius};
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background-color: #ffffff;
+}
+
+main {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--brand);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--brand);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  background-color: var(--brand);
+  border: 2px solid var(--brand);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  filter: brightness(0.85);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 3px;
+}
+
+form {
+  max-width: 32rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="submit"]):not([type="reset"]),
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font: inherit;
+  color: var(--ink);
+  background-color: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--brand);
+}
+
+fieldset {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+legend {
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+th {
+  background-color: var(--surface);
+  font-weight: 700;
+}
+
+tr:hover {
+  background-color: var(--surface);
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--surface);
+  border-left: 4px solid var(--brand);
+}
+
+code {
+  padding: 0.2rem 0.4rem;
+  background-color: var(--surface);
+  border-radius: 0.25rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2rem 0;
+}
