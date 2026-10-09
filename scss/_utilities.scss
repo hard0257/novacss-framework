@@ -1,0 +1,77 @@
+@use "tokens" as t;
+
+/* Colour utilities */
+
+.u-text-brand {
+  color: var(--brand);
+}
+
+.u-text-dark {
+  color: var(--ink);
+}
+
+.u-text-white {
+  color: #ffffff;
+}
+
+.u-bg-brand {
+  background-color: var(--brand);
+}
+
+.u-bg-soft {
+  background-color: var(--surface);
+}
+
+/* Font weight utilities */
+
+.u-weight-normal {
+  font-weight: 400;
+}
+
+.u-weight-bold {
+  font-weight: 700;
+}
+
+/* Font size utilities */
+
+.u-text-sm {
+  font-size: 0.875rem;
+}
+
+.u-text-md {
+  font-size: 1rem;
+}
+
+.u-text-lg {
+  font-size: 1.25rem;
+}
+
+/* Margin utilities */
+
+@each $step, $value in t.$spaces {
+  .u-m-#{$step} {
+    margin: $value;
+  }
+}
+
+/* Padding utilities */
+
+@each $step, $value in t.$spaces {
+  .u-p-#{$step} {
+    padding: $value;
+  }
+}
+
+/* Border utilities */
+
+.u-border {
+  border: 1px solid var(--line);
+}
+
+.u-border-brand {
+  border: 1px solid var(--brand);
+}
+
+.u-rounded {
+  border-radius: var(--radius);
+}
