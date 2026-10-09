@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaCSS | Framework Demo</title>
+  <link rel="stylesheet" href="css/framework.css">
+</head>
+<body>
+
+  <main>
+    <header>
+      <h1>NovaCSS Framework</h1>
+      <p class="u-text-lg">
+        A lightweight, customizable CSS framework built with Sass.
+      </p>
+      <hr>
+    </header>
+
+    <section>
+      <h2>Typography</h2>
+      <p>NovaCSS provides consistent styling for HTML elements.</p>
+
+      <h3>Heading Level 3</h3>
+      <h4>Heading Level 4</h4>
+      <h5>Heading Level 5</h5>
+      <h6>Heading Level 6</h6>
+
+      <p>
+        This paragraph includes
+        <a href="#forms">a styled link</a>
+        and demonstrates the default typography.
+      </p>
+    </section>
+
+    <section>
+      <h2>Lists</h2>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Reusable styles</li>
+        <li>Customizable variables</li>
+        <li>Simple utility classes</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Install the framework</li>
+        <li>Link the CSS file</li>
+        <li>Start building your website</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Buttons</h2>
+      <button type="button">Primary Button</button>
+      <button type="button" disabled>Disabled Button</button>
+    </section>
+
+    <section id="forms">
+      <h2>Forms and Inputs</h2>
+
+      <form action="#">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        >
+
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        >
+
+        <label for="category">Category</label>
+        <select id="category" name="category">
+          <option value="">Choose a category</option>
+          <option value="design">Design</option>
+          <option value="development">Development</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Write your message"
+        ></textarea>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label>
+            <input type="checkbox" name="updates">
+            Receive updates
+          </label>
+
+          <label>
+            <input type="radio" name="plan" value="basic">
+            Basic Plan
+          </label>
+
+          <label>
+            <input type="radio" name="plan" value="premium">
+            Premium Plan
+          </label>
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit Form</button>
+        </p>
+      </form>
+    </section>
+
+    <section>
+      <h2>Tables</h2>
+
+      <table>
+        <caption>NovaCSS Features</caption>
+
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Sass</td>
+            <td>Organized styles using partials</td>
+          </tr>
+
+          <tr>
+            <td>Variables</td>
+            <td>Customizable colors and spacing</td>
+          </tr>
+
+          <tr>
+            <td>Utilities</td>
+            <td>Reusable styling classes</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Utility Classes</h2>
+
+      <div class="u-bg-soft u-p-3 u-m-3 u-border u-rounded">
+        <p class="u-weight-bold u-text-brand u-text-lg">
+          Utility Class Example
+        </p>
+
+        <p class="u-text-sm">
+          This box uses background, padding, margin,
+          border, radius, font weight, and font size utilities.
+        </p>
+      </div>
+
+      <div class="u-bg-brand u-text-white u-p-4 u-rounded">
+        <p class="u-weight-bold">
+          Brand Color Example
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <hr>
+      <p class="u-text-sm">
+        NovaCSS — Custom CSS Framework
+      </p>
+    </footer>
+  </main>
+
+</body>
+</html>
